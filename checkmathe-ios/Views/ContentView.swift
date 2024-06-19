@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    var quoteManager = QuoteManager()
     var cManager = CManager()
-    
-    @State var quote: QuoteBody? // can be nil
     @State var token: String?
     
     var body: some View {
         VStack {
             if let token = token {
                 AuthView(token: token)
-                // still fetching
+            // still fetching
             } else {
                 LoadingView()
                     .task {
@@ -27,6 +24,12 @@ struct ContentView: View {
                             for tutoring in tuts {
                                 print(tutoring.content, tutoring.yyyy_mm_dd)
                             }
+                            
+                            let subjects = try await cManager.getSubjects()
+                            for subj in subjects {
+                                print(subj.title)
+                            }
+                            
                             token = try await cManager.getToken(username: "nico_strn", password: "123")
                         } catch {
                             print("Error authing: \(error)")
@@ -38,5 +41,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(quote: previewQuote, token: previewToken)
+    ContentView(token: previewToken)
 }

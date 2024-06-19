@@ -37,5 +37,5 @@ struct AuthView: View {
 }
 
 #Preview {
-    QuoteView(quote: previewQuote)
+    AuthView(token: previewToken)
 }

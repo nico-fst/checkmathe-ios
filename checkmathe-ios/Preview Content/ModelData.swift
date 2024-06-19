@@ -7,7 +7,7 @@
 
 import Foundation
 
-var previewQuote: QuoteBody = load("quoteData.json")
+//var previewQuote: QuoteBody = load("quoteData.json")
 var previewToken: String = "afadfc78f8b03f17cc2a753a00bc20a53ca13d1a"
 
 func load<T: Decodable>(_ filename: String) -> T {

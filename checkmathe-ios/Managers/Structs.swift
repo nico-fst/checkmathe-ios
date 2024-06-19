@@ -18,7 +18,7 @@ struct AuthResponse: Decodable {
 
 struct Tutoring: Decodable {
     let id: UInt8
-    var yyyy_mm_dd: String
+    let yyyy_mm_dd: String
     let subject_title: String
     let teacher_username: String
     let student_username: String
@@ -36,4 +36,9 @@ struct SumBody: Decodable, Sequence {
     func makeIterator() -> IndexingIterator<[Tutoring]> {
         return tutorings.makeIterator()
     }
+}
+
+struct Subject: Decodable {
+    let id: UInt8
+    let title: String
 }
