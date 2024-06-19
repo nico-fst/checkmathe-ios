@@ -17,7 +17,40 @@
 		97705C982C22EC060090348F /* CManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705C972C22EC060090348F /* CManager.swift */; };
 		97705C9A2C22EF4B0090348F /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705C992C22EF4B0090348F /* AuthView.swift */; };
 		97705CA02C235EF40090348F /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705C9F2C235EF40090348F /* Structs.swift */; };
+		97705CCD2C2377050090348F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97705CB12C23769E0090348F /* WidgetKit.framework */; };
+		97705CCE2C2377050090348F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97705CB32C23769E0090348F /* SwiftUI.framework */; };
+		97705CD12C2377050090348F /* cm_widgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705CD02C2377050090348F /* cm_widgetsBundle.swift */; };
+		97705CD32C2377050090348F /* cm_widgetsLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705CD22C2377050090348F /* cm_widgetsLiveActivity.swift */; };
+		97705CD52C2377050090348F /* cm_widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705CD42C2377050090348F /* cm_widgets.swift */; };
+		97705CD72C2377050090348F /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705CD62C2377050090348F /* AppIntent.swift */; };
+		97705CD92C2377060090348F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97705CD82C2377060090348F /* Assets.xcassets */; };
+		97705CDD2C2377060090348F /* cm-widgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 97705CCC2C2377050090348F /* cm-widgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97705CE22C237D4E0090348F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705CE12C237D4E0090348F /* InfoView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97705CDB2C2377060090348F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97705C6E2C22C8CB0090348F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97705CCB2C2377050090348F;
+			remoteInfo = "cm-widgetsExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97705CC42C2376A00090348F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				97705CDD2C2377060090348F /* cm-widgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		97705C762C22C8CB0090348F /* checkmathe-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "checkmathe-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +64,16 @@
 		97705C972C22EC060090348F /* CManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CManager.swift; sourceTree = "<group>"; };
 		97705C992C22EF4B0090348F /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		97705C9F2C235EF40090348F /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		97705CB12C23769E0090348F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		97705CB32C23769E0090348F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		97705CCC2C2377050090348F /* cm-widgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "cm-widgetsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97705CD02C2377050090348F /* cm_widgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cm_widgetsBundle.swift; sourceTree = "<group>"; };
+		97705CD22C2377050090348F /* cm_widgetsLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cm_widgetsLiveActivity.swift; sourceTree = "<group>"; };
+		97705CD42C2377050090348F /* cm_widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cm_widgets.swift; sourceTree = "<group>"; };
+		97705CD62C2377050090348F /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		97705CD82C2377060090348F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97705CDA2C2377060090348F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97705CE12C237D4E0090348F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +84,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		97705CC92C2377050090348F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97705CCE2C2377050090348F /* SwiftUI.framework in Frameworks */,
+				97705CCD2C2377050090348F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -48,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				97705C782C22C8CB0090348F /* checkmathe-ios */,
+				97705CCF2C2377050090348F /* cm-widgets */,
+				97705CB02C23769E0090348F /* Frameworks */,
 				97705C772C22C8CB0090348F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				97705C762C22C8CB0090348F /* checkmathe-ios.app */,
+				97705CCC2C2377050090348F /* cm-widgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,8 +152,31 @@
 				97705C7B2C22C8CB0090348F /* ContentView.swift */,
 				97705C8D2C22D4F80090348F /* LoadingView.swift */,
 				97705C992C22EF4B0090348F /* AuthView.swift */,
+				97705CE12C237D4E0090348F /* InfoView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		97705CB02C23769E0090348F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97705CB12C23769E0090348F /* WidgetKit.framework */,
+				97705CB32C23769E0090348F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97705CCF2C2377050090348F /* cm-widgets */ = {
+			isa = PBXGroup;
+			children = (
+				97705CD02C2377050090348F /* cm_widgetsBundle.swift */,
+				97705CD22C2377050090348F /* cm_widgetsLiveActivity.swift */,
+				97705CD42C2377050090348F /* cm_widgets.swift */,
+				97705CD62C2377050090348F /* AppIntent.swift */,
+				97705CD82C2377060090348F /* Assets.xcassets */,
+				97705CDA2C2377060090348F /* Info.plist */,
+			);
+			path = "cm-widgets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,15 +189,34 @@
 				97705C722C22C8CB0090348F /* Sources */,
 				97705C732C22C8CB0090348F /* Frameworks */,
 				97705C742C22C8CB0090348F /* Resources */,
+				97705CC42C2376A00090348F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				97705CDC2C2377060090348F /* PBXTargetDependency */,
 			);
 			name = "checkmathe-ios";
 			productName = "checkmathe-ios";
 			productReference = 97705C762C22C8CB0090348F /* checkmathe-ios.app */;
 			productType = "com.apple.product-type.application";
+		};
+		97705CCB2C2377050090348F /* cm-widgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97705CDE2C2377060090348F /* Build configuration list for PBXNativeTarget "cm-widgetsExtension" */;
+			buildPhases = (
+				97705CC82C2377050090348F /* Sources */,
+				97705CC92C2377050090348F /* Frameworks */,
+				97705CCA2C2377050090348F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cm-widgetsExtension";
+			productName = "cm-widgetsExtension";
+			productReference = 97705CCC2C2377050090348F /* cm-widgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -132,6 +229,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					97705C752C22C8CB0090348F = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					97705CCB2C2377050090348F = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -150,6 +250,7 @@
 			projectRoot = "";
 			targets = (
 				97705C752C22C8CB0090348F /* checkmathe-ios */,
+				97705CCB2C2377050090348F /* cm-widgetsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -165,6 +266,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		97705CCA2C2377050090348F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97705CD92C2377060090348F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -172,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97705CE22C237D4E0090348F /* InfoView.swift in Sources */,
 				97705CA02C235EF40090348F /* Structs.swift in Sources */,
 				97705C7C2C22C8CB0090348F /* ContentView.swift in Sources */,
 				97705C8E2C22D4F80090348F /* LoadingView.swift in Sources */,
@@ -182,7 +292,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		97705CC82C2377050090348F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97705CD32C2377050090348F /* cm_widgetsLiveActivity.swift in Sources */,
+				97705CD72C2377050090348F /* AppIntent.swift in Sources */,
+				97705CD52C2377050090348F /* cm_widgets.swift in Sources */,
+				97705CD12C2377050090348F /* cm_widgetsBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97705CDC2C2377060090348F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97705CCB2C2377050090348F /* cm-widgetsExtension */;
+			targetProxy = 97705CDB2C2377060090348F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		97705C822C22C8CC0090348F /* Debug */ = {
@@ -307,6 +436,7 @@
 		97705C852C22C8CC0090348F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +468,7 @@
 		97705C862C22C8CC0090348F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +497,60 @@
 			};
 			name = Release;
 		};
+		97705CDF2C2377060090348F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8K762KJBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "cm-widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "cm-widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nicostern.checkmathe-ios.cm-widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97705CE02C2377060090348F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8K762KJBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "cm-widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "cm-widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nicostern.checkmathe-ios.cm-widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -383,6 +568,15 @@
 			buildConfigurations = (
 				97705C852C22C8CC0090348F /* Debug */,
 				97705C862C22C8CC0090348F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97705CDE2C2377060090348F /* Build configuration list for PBXNativeTarget "cm-widgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97705CDF2C2377060090348F /* Debug */,
+				97705CE02C2377060090348F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
