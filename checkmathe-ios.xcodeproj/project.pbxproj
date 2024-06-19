@@ -11,6 +11,8 @@
 		97705C7C2C22C8CB0090348F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705C7B2C22C8CB0090348F /* ContentView.swift */; };
 		97705C7E2C22C8CC0090348F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97705C7D2C22C8CC0090348F /* Assets.xcassets */; };
 		97705C812C22C8CC0090348F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97705C802C22C8CC0090348F /* Preview Assets.xcassets */; };
+		97705C892C22CC9A0090348F /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705C882C22CC9A0090348F /* QuoteManager.swift */; };
+		97705C8E2C22D4F80090348F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705C8D2C22D4F80090348F /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		97705C7B2C22C8CB0090348F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		97705C7D2C22C8CC0090348F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97705C802C22C8CC0090348F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97705C882C22CC9A0090348F /* QuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteManager.swift; sourceTree = "<group>"; };
+		97705C8D2C22D4F80090348F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		97705C782C22C8CB0090348F /* checkmathe-ios */ = {
 			isa = PBXGroup;
 			children = (
+				97705C8A2C22D2BF0090348F /* Views */,
+				97705C872C22CC820090348F /* Managers */,
 				97705C792C22C8CB0090348F /* checkmathe_iosApp.swift */,
-				97705C7B2C22C8CB0090348F /* ContentView.swift */,
 				97705C7D2C22C8CC0090348F /* Assets.xcassets */,
 				97705C7F2C22C8CC0090348F /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				97705C802C22C8CC0090348F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		97705C872C22CC820090348F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				97705C882C22CC9A0090348F /* QuoteManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		97705C8A2C22D2BF0090348F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97705C7B2C22C8CB0090348F /* ContentView.swift */,
+				97705C8D2C22D4F80090348F /* LoadingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				97705C7C2C22C8CB0090348F /* ContentView.swift in Sources */,
+				97705C8E2C22D4F80090348F /* LoadingView.swift in Sources */,
+				97705C892C22CC9A0090348F /* QuoteManager.swift in Sources */,
 				97705C7A2C22C8CB0090348F /* checkmathe_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
