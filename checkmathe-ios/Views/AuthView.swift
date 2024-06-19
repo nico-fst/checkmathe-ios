@@ -36,6 +36,6 @@ struct AuthView: View {
     }
 }
 
-//#Preview {
-//    QuoteView(quote: previewQuote)
-//}
+#Preview {
+    QuoteView(quote: previewQuote)
+}

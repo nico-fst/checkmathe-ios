@@ -38,7 +38,11 @@ struct ContentView: View {
                 LoadingView()
                     .task {
                         do {
-                            token = try await cManager.authUser(username: "nico_strn", password: "123")
+                            let tuts = try await cManager.getSum(stud_username: "demo_user", password: "123", year: "2024", month: "05")
+                            for tutoring in tuts {
+                                print(tutoring.content, tutoring.yyyy_mm_dd)
+                            }
+                            token = try await cManager.getToken(username: "nico_strn", password: "123")
                         } catch {
                             print("Error authing: \(error)")
                         }
@@ -49,5 +53,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(quote: previewQuote, token: previewToken)
 }
