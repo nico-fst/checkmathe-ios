@@ -73,4 +73,26 @@ class CManager {
         let decodedData = try JSONDecoder().decode([Subject].self, from: data)
         return decodedData
     }
+    
+    func getTutoring(username: String, password: String, tut_id: Int) async throws -> Tutoring {
+        /// equivalent of tutoring/ @GET
+        
+        // pre: get token
+        let token = try await getToken(username: username, password: password)
+        guard let url = URL(string: "http://192.168.0.108:8000/api/tutoring/\(tut_id)/")
+            else {fatalError("Missing URL")}
+        
+        // get data
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "GET"
+        urlRequest.setValue("token \(token)", forHTTPHeaderField: "Authorization")
+        let (data, response) = try await URLSession.shared.data(for: urlRequest)
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            fatalError("Error fetching api data")
+        }
+        
+        // decode into struct
+        let decodedData = try JSONDecoder().decode(Tutoring.self, from: data)
+        return decodedData
+    }
 }

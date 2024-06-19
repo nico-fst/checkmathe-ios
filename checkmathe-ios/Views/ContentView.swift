@@ -30,9 +30,12 @@ struct ContentView: View {
                                 print(subj.title)
                             }
                             
+                            let tut = try await cManager.getTutoring(username: "teacher", password: "123", tut_id: 1)
+                            print("Am \(tut.yyyy_mm_dd) wurde \(tut.duration_in_min) lang Folgendes gecoached: \(tut.content)")
+                            
                             token = try await cManager.getToken(username: "nico_strn", password: "123")
                         } catch {
-                            print("Error authing: \(error)")
+                            print("Error fetching: \(error)")
                         }
                     }
             }

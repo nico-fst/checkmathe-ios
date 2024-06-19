@@ -19,6 +19,7 @@ struct AuthResponse: Decodable {
 struct Tutoring: Decodable {
     let id: UInt8
     let yyyy_mm_dd: String
+    let duration_in_min: UInt8
     let subject_title: String
     let teacher_username: String
     let student_username: String

@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  checkmathe-ios
+//
+//  Created by Nico Stern on 19.06.24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_URL = "http://192.168.0.108:8000"
