@@ -13,8 +13,10 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            // sobald successfully fetched
             if let quote = quote {
-                Text("Quote fetched!")
+                QuoteView(quote: quote)
+            // still fetching
             } else {
                 LoadingView()
                     .task {
