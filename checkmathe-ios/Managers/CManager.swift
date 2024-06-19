@@ -9,6 +9,8 @@ import Foundation
 
 class CManager {
     func getToken(username: String, password: String) async throws -> String {
+        /// equivalent of obtain_auth_token/
+
         guard let url = URL(string: "http://192.168.0.108:8000/api/obtain_auth_token/")
         else {fatalError("Missing URL")}
         
@@ -33,6 +35,8 @@ class CManager {
     }
     
     func getSum(stud_username: String, password: String, year: String, month: String) async throws -> SumBody {
+        /// equivalent of sum/
+
         // pre: get token
         let token = try await getToken(username: stud_username, password: password)
         guard let url = URL(string: "http://192.168.0.108:8000/api/sum/\(stud_username)/\(year)/\(month)/")
@@ -50,36 +54,5 @@ class CManager {
         // decode into struct
         let decodedData = try JSONDecoder().decode(SumBody.self, from: data)
         return decodedData
-    }
-}
-
-struct AuthRequest: Codable {
-    let username: String
-    let password: String
-}
-
-struct AuthResponse: Decodable {
-    let token: String
-}
-
-struct Tutoring: Decodable {
-    let id: UInt8
-    var yyyy_mm_dd: String
-    let subject_title: String
-    let teacher_username: String
-    let student_username: String
-    let content: String
-    let pdf: URL?
-    let paid: Bool
-    let paid_status: String
-}
-
-struct SumBody: Decodable, Sequence {
-    let sum: Double
-    let count_tutorings: Int
-    let tutorings: [Tutoring]
-    
-    func makeIterator() -> IndexingIterator<[Tutoring]> {
-        return tutorings.makeIterator()
     }
 }

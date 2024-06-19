@@ -18,6 +18,7 @@
 		97705C942C22DF570090348F /* quoteData.json in Resources */ = {isa = PBXBuildFile; fileRef = 97705C932C22DF570090348F /* quoteData.json */; };
 		97705C982C22EC060090348F /* CManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705C972C22EC060090348F /* CManager.swift */; };
 		97705C9A2C22EF4B0090348F /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705C992C22EF4B0090348F /* AuthView.swift */; };
+		97705CA02C235EF40090348F /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705C9F2C235EF40090348F /* Structs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		97705C932C22DF570090348F /* quoteData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quoteData.json; sourceTree = "<group>"; };
 		97705C972C22EC060090348F /* CManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CManager.swift; sourceTree = "<group>"; };
 		97705C992C22EF4B0090348F /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		97705C9F2C235EF40090348F /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				97705C882C22CC9A0090348F /* QuoteManager.swift */,
 				97705C972C22EC060090348F /* CManager.swift */,
+				97705C9F2C235EF40090348F /* Structs.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97705CA02C235EF40090348F /* Structs.swift in Sources */,
 				97705C7C2C22C8CB0090348F /* ContentView.swift in Sources */,
 				97705C902C22DED80090348F /* QuoteView.swift in Sources */,
 				97705C8E2C22D4F80090348F /* LoadingView.swift in Sources */,
@@ -319,6 +323,8 @@
 				DEVELOPMENT_TEAM = Y8K762KJBC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CheckMathe;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -348,6 +354,8 @@
 				DEVELOPMENT_TEAM = Y8K762KJBC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CheckMathe;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
