@@ -16,6 +16,8 @@
 		97705C902C22DED80090348F /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705C8F2C22DED80090348F /* QuoteView.swift */; };
 		97705C922C22DF050090348F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705C912C22DF050090348F /* ModelData.swift */; };
 		97705C942C22DF570090348F /* quoteData.json in Resources */ = {isa = PBXBuildFile; fileRef = 97705C932C22DF570090348F /* quoteData.json */; };
+		97705C982C22EC060090348F /* CManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705C972C22EC060090348F /* CManager.swift */; };
+		97705C9A2C22EF4B0090348F /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705C992C22EF4B0090348F /* AuthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		97705C8F2C22DED80090348F /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		97705C912C22DF050090348F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		97705C932C22DF570090348F /* quoteData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quoteData.json; sourceTree = "<group>"; };
+		97705C972C22EC060090348F /* CManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CManager.swift; sourceTree = "<group>"; };
+		97705C992C22EF4B0090348F /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				97705C882C22CC9A0090348F /* QuoteManager.swift */,
+				97705C972C22EC060090348F /* CManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 				97705C7B2C22C8CB0090348F /* ContentView.swift */,
 				97705C8D2C22D4F80090348F /* LoadingView.swift */,
 				97705C8F2C22DED80090348F /* QuoteView.swift */,
+				97705C992C22EF4B0090348F /* AuthView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 				97705C892C22CC9A0090348F /* QuoteManager.swift in Sources */,
 				97705C7A2C22C8CB0090348F /* checkmathe_iosApp.swift in Sources */,
 				97705C922C22DF050090348F /* ModelData.swift in Sources */,
+				97705C9A2C22EF4B0090348F /* AuthView.swift in Sources */,
+				97705C982C22EC060090348F /* CManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
