@@ -14,7 +14,9 @@ struct CardsView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 16) {
                         ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                            CardView()
+                            NavigationLink(destination: DetailView()) {
+                                CardView()
+                            }
                         }
                     }
                     .padding()  // default: 16

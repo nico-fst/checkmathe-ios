@@ -30,6 +30,8 @@
 		97705CD92C2377060090348F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97705CD82C2377060090348F /* Assets.xcassets */; };
 		97705CDD2C2377060090348F /* cm-widgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 97705CCC2C2377050090348F /* cm-widgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		97705CE22C237D4E0090348F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97705CE12C237D4E0090348F /* InfoView.swift */; };
+		978A8E962C24F178002C775B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A8E952C24F178002C775B /* DetailView.swift */; };
+		978A8E982C24F633002C775B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A8E972C24F633002C775B /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		97705CD82C2377060090348F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97705CDA2C2377060090348F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97705CE12C237D4E0090348F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		978A8E952C24F178002C775B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		978A8E972C24F633002C775B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,8 @@
 				97705C992C22EF4B0090348F /* AuthView.swift */,
 				97705CE12C237D4E0090348F /* InfoView.swift */,
 				975327B82C2489350002774E /* CardsView.swift */,
+				978A8E952C24F178002C775B /* DetailView.swift */,
+				978A8E972C24F633002C775B /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,7 +305,9 @@
 				97705CE22C237D4E0090348F /* InfoView.swift in Sources */,
 				975327B92C2489350002774E /* CardsView.swift in Sources */,
 				97705CA02C235EF40090348F /* Structs.swift in Sources */,
+				978A8E962C24F178002C775B /* DetailView.swift in Sources */,
 				97705C7C2C22C8CB0090348F /* ContentView.swift in Sources */,
+				978A8E982C24F633002C775B /* HomeView.swift in Sources */,
 				97705C8E2C22D4F80090348F /* LoadingView.swift in Sources */,
 				97705C7A2C22C8CB0090348F /* checkmathe_iosApp.swift in Sources */,
 				97705C922C22DF050090348F /* ModelData.swift in Sources */,
