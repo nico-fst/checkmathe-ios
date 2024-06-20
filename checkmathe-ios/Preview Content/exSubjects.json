@@ -1,0 +1,54 @@
+[
+    {
+        "id": 99,
+        "title": "SHIT"
+    },
+    {
+        "id": 1,
+        "title": "Biology"
+    },
+    {
+        "id": 2,
+        "title": "Math"
+    },
+    {
+        "id": 3,
+        "title": "Physics"
+    },
+    {
+        "id": 4,
+        "title": "English"
+    },
+    {
+        "id": 5,
+        "title": "French"
+    },
+    {
+        "id": 6,
+        "title": "Latin"
+    },
+    {
+        "id": 7,
+        "title": "Spanish"
+    },
+    {
+        "id": 8,
+        "title": "Chemistry"
+    },
+    {
+        "id": 9,
+        "title": "History"
+    },
+    {
+        "id": 10,
+        "title": "Art"
+    },
+    {
+        "id": 11,
+        "title": "German"
+    },
+    {
+        "id": 12,
+        "title": "Other"
+    }
+]

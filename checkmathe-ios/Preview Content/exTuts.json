@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "yyyy_mm_dd": "2024-05-27",
+        "duration_in_min": 45,
+        "subject_title": "Math",
+        "teacher_username": "teacher",
+        "student_username": "demo_user",
+        "content": "asdf",
+        "pdf": null,
+        "paid": false,
+        "paid_status": "pending"
+    },
+    {
+        "id": 2,
+        "yyyy_mm_dd": "2024-05-28",
+        "duration_in_min": 45,
+        "subject_title": "Biology",
+        "teacher_username": "teacher",
+        "student_username": "demo_user",
+        "content": "asdf",
+        "pdf": "https://checkmathe-dev.s3.amazonaws.com/pdfs/zettel_05_SNAO8of.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAXYKJQPMNYNL4NSHG%2F20240619%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240619T181646Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=3e07ec8d57df4e9e848844c4eb2b653877db9b57847575d48aab4625891cc77b",
+        "paid": false,
+        "paid_status": "pending"
+    }
+]

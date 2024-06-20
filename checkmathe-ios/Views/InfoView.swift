@@ -23,6 +23,6 @@ struct InfoView: View {
 
 
 
-//#Preview {
-//    InfoView()
-//}
+#Preview {
+    InfoView(tuts: previewTuts, subjects: previewSubjects, tut: previewTut)
+}

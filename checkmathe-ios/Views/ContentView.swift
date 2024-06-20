@@ -40,5 +40,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(token: previewToken)
+    ContentView(token: previewToken, tuts: previewTuts, subjects: previewSubjects, tut: previewTut)
 }

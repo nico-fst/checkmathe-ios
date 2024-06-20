@@ -1,0 +1,12 @@
+{
+    "id": 1,
+    "yyyy_mm_dd": "2024-05-27",
+    "duration_in_min": 45,
+    "subject_title": "Math",
+    "teacher_username": "teacher",
+    "student_username": "demo_user",
+    "content": "der 27er hier isses",
+    "pdf": null,
+    "paid": false,
+    "paid_status": "pending"
+}
