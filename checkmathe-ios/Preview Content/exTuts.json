@@ -6,9 +6,9 @@
         "subject_title": "Math",
         "teacher_username": "teacher",
         "student_username": "demo_user",
-        "content": "asdf",
+        "content": "siuu sogar bezahlt bididi",
         "pdf": null,
-        "paid": false,
+        "paid": true,
         "paid_status": "pending"
     },
     {
@@ -18,7 +18,19 @@
         "subject_title": "Biology",
         "teacher_username": "teacher",
         "student_username": "demo_user",
-        "content": "asdf",
+        "content": "asdf und nicht bezahlt",
+        "pdf": "https://checkmathe-dev.s3.amazonaws.com/pdfs/zettel_05_SNAO8of.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAXYKJQPMNYNL4NSHG%2F20240619%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240619T181646Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=3e07ec8d57df4e9e848844c4eb2b653877db9b57847575d48aab4625891cc77b",
+        "paid": false,
+        "paid_status": "pending"
+    },
+    {
+        "id": 3,
+        "yyyy_mm_dd": "2024-05-29",
+        "duration_in_min": 90,
+        "subject_title": "Art",
+        "teacher_username": "teacher",
+        "student_username": "demo_user",
+        "content": "viel passiert heute dies das ananas kurvendiskussion und nicht einmal bezahlt",
         "pdf": "https://checkmathe-dev.s3.amazonaws.com/pdfs/zettel_05_SNAO8of.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAXYKJQPMNYNL4NSHG%2F20240619%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20240619T181646Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=3e07ec8d57df4e9e848844c4eb2b653877db9b57847575d48aab4625891cc77b",
         "paid": false,
         "paid_status": "pending"

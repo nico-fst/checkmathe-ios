@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct CardsView: View {
+    @State var tuts: [Tutoring]
+    
     var body: some View {
         NavigationStack {
             ScrollView {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 16) {
-                        ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+                        ForEach(tuts, id: \.id) { tut in  // for loop would not work
                             NavigationLink(destination: DetailView()) {
-                                CardView()
+                                CardView(tut: tut)
                             }
+                            .buttonStyle(PlainButtonStyle())  // remove weird link formats (blue, centered)
                         }
                     }
                     .padding()  // default: 16
@@ -28,12 +31,16 @@ struct CardsView: View {
 }
 
 #Preview {
-    CardsView()
+    CardsView(tuts: previewTuts)
+//    CardView(tut: previewTut)
 }
 
 struct CardView: View {
+    @State var tut: Tutoring
+    
     var body: some View {
         VStack(alignment: .leading) {  // CSS: top = 0
+            // TODO make dynamic
             ZStack {
                 Image("pdf-signifikanztest")
                     .resizable()
@@ -46,18 +53,18 @@ struct CardView: View {
             .shadow(radius: 2)
             
             HStack {
-                Text("Mathe Check")
+                Text("\(tut.subject_title) Check")
                     .font(.title)
                     .bold()
                     .lineLimit(1)
                 Image(systemName: "bolt.fill")
             }
-            Text("Kurvendiskussion anhand mehrerer Beispiele, vor allem Textaufgaben.")
-                .lineLimit(2)
+            Text(tut.content)
+                .lineLimit(1)
                 .dynamicTypeSize(.small)
             
             HStack {
-                Text("60min")
+                Text("\(tut.duration_in_min) min")
                     .padding(5)
                     .foregroundColor(Color.purple)
                     .background(RoundedRectangle(cornerRadius: 99)
@@ -65,7 +72,8 @@ struct CardView: View {
                         .background(RoundedRectangle(cornerRadius: 99).fill(Color.purple).opacity(0.3))  // nested for opacity being applicable
                         .shadow(radius: 5)
                     )
-                Text("01.06.2024")
+                Text(tut.yyyy_mm_dd)
+                    .opacity(0.3)
             }
             .dynamicTypeSize(.xSmall)
         }
@@ -78,6 +86,6 @@ struct CardView: View {
             startPoint: UnitPoint(x: 0.27314817271789327, y: -5.557918181242627e-9),
             endPoint: UnitPoint(x: 0.7175925935365293, y: 1.059999963251207)))
         .cornerRadius(30)
-        .shadow(radius: 5)
+//        .shadow(radius: 5)
     }
 }
