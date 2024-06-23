@@ -13,12 +13,17 @@ struct ContentView: View {
             CardsView()
                 .tabItem {
                     Image(systemName: "house.fill")
-                    Text("Home")
+                    Text("Tutorings")
                 }
             InfoView(tuts: previewTuts, subjects: previewSubjects, tut: previewTut)
                 .tabItem {
-                    Image(systemName: "info.bubble.fill")
-                    Text("Home")
+                    Image(systemName: "info.bubble.fill.rtl")
+                    Text("Info")
+                }
+            PaymentsView()
+                .tabItem {
+                    Image(systemName: "cart.fill")
+                    Text("Payments")
                 }
         }
     }
